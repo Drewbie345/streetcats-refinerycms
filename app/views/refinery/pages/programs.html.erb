@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="row borders">
+    <h1><strong>Our Programs!</strong></h1>
+  </div>
+  <div class="row borders" id="stitch">
+    <div class="col-md-8">  
+      <h2>A Stitch In Time</h2>
+      <h4>Low Cost Spay/Neuter for Strays</h4>
+      <h4>In seven years, one female cat and her offspring can theoretically produce 420,000 cats. Considering this staggering fact, one can understand the importance of our Stitch-N-Time program.</h4>
+      <p>Vouchers cost $20 and are available for purchase by persons willing to help the homeless cats by getting them spayed (females) or neutered (males) and vaccinated for rabies. It will be your responsibility to take the cat to a selected veterinarian and pick it up after surgery in addition to providing it with food and water. Vouchers are issued on a monthly basis but can be used up to a three month period. StreetCats, Inc. partners with veterinarians in the Tulsa area to make these low cost vouchers available.</p>
+      <p>If you wish to purchase a voucher and participate in our program, please call 918.298.0104 and leave your name and telephone number or send an email. A volunteer will then contact you to discuss A Stitch in Time program in more detail. Vouchers need to be set up ahead of time before you go into StreetCats to purchase them.</p>
+      <p>When purchasing vouchers, you may borrow one trap at a time for two weeks at no charge although a late fee may be assessed if the trap is not returned when due back in.</p>
+    </div>
+    <div class="col-md-4">
+      <%= image_tag 'home_cat.jpg', alt: "front page cat" %>
+    </div>
+  </div>
+  <div class="row borders" id="vets">
+    <div class="col-md-4">
+      <%= image_tag 'home_cat.jpg', alt: "front page cat" %>
+    </div>
+    <div class="col-md-8">
+      <%=raw @page.content_for(:body) %>
+    </div>
+  </div>
+  <div class="row borders" id="intake">
+    <div class="col-md-8">
+      <h2>Kitty Intake</h2>
+      <p>If you have a kitty you would like us to take, we ask that you please bring a flyer with pictures and descriptions of the cat(s) to our shop. We have a board where people can hang flyers of kitties that need to be adopted and we intake cats from the board as space allows. We are using this as our waiting list because we are a very small organization and, therefore, very limited in space.</p>
+      <p>We do not take feral cats because they usually need to be barn cats and we do not have any barns for them. If you would still like to contact us about a kitty, you may contact us via email or call (918.298.0104) and someone will respond to you in a timely manner.</p>
+    </div>
+    <div class="col-md-4">
+      <%= image_tag 'home_cat.jpg', alt: "front page cat" %>
+    </div>
+  </div>
+  <div class="row borders" id="valentine">
+    <div class="col-md-4">
+      <%= image_tag 'home_cat.jpg', alt: "front page cat" %>
+    </div>
+    <div class="col-md-8">
+      <%=raw @page.content_for(:side_body) %>
+    </div>
+  </div>
+</div>

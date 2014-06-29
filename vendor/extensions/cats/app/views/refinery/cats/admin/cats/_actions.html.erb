@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::Cats::Admin::CatsController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.cats_admin_cats_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_cats_admin_cat_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::Cats::Admin::CatsController.sortable? && ::Refinery::Cats::Cat.many? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Cats"),
+                 refinery.cats_admin_cats_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Cats"),
+                 refinery.cats_admin_cats_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

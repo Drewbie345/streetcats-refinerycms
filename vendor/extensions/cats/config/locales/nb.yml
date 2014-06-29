@@ -1,0 +1,33 @@
+nb:
+  refinery:
+    plugins:
+      cats:
+        title: Cats
+    cats:
+      admin:
+        cats:
+          actions:
+            create_new: Lag en ny Cat
+            reorder: Endre rekkefølgen på Cats
+            reorder_done: Ferdig å endre rekkefølgen Cats
+          records:
+            title: Cats
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Cats enda. Klikk på "Lag en ny Cat" for å legge til din første cat.
+          cat:
+            view_live_html: Vis hvordan denne cat ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne cat
+            delete: Fjern denne cat permanent
+      cats:
+        show:
+          other: Andre Cats
+  activerecord:
+    attributes:
+      'refinery/cats/cat':
+        name: Name
+        description: Description
+        dob: Dob
+        gender: Gender
+        breed: Breed
+        declawed: Declawed
+        photo: Photo

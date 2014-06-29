@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="row borders">
+    <h1><strong>You Can Help!</strong></h1>
+  </div>
+  <div class="row borders lead" id="volunteer">
+    <div class="col-md-4">
+      <%= image_tag 'home_cat.jpg', alt: "front page cat" %>
+    </div> 
+    <div class="col-md-8">
+      <%=raw @page.content_for(:body) %>
+    </div>
+  </div>
+
+  <div class="row borders" id="download">
+    <h2>Download Forms</h2>
+    <div class="col-md-6">
+      <h3>Volunteer Application (PDF)</h3>
+    </div>
+    <div class="col-md-6">
+      <h3>Volunteer Application (Word)</h3>
+    </div>
+  </div>
+
+  <div class="row borders" id="hours">
+    <div class="col-md-8">
+      <%=raw @page.content_for(:side_body) %>
+    </div>
+    <div class="col-md-4">
+      <%= image_tag 'home_cat.jpg', alt: "front page cat" %>
+    </div> 
+  </div>
+
+  <div class="row borders" id="wishlist">
+    <div class="col-md-4">
+      <%= image_tag 'home_cat.jpg', alt: "front page cat" %>
+    </div> 
+    <div class="col-md-8">
+      <%=raw @page.content_for(:extra_body_1) %>
+    </div>
+  </div>
+
+  <div class="row borders" id="boutique">
+    <div class="col-md-4">
+      <%= image_tag 'home_cat.jpg', alt: "front page cat" %>
+    </div> 
+    <div class="col-md-8">
+      <h3>The StreetCats Boutique</h3>
+      <p>The proceeds are all directly applied to the adoption program. We have lots of toys for your cats and gifts for your family and friends.</p>
+    </div>
+  </div>
+</div>
+
+

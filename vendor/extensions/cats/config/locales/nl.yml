@@ -1,0 +1,33 @@
+nl:
+  refinery:
+    plugins:
+      cats:
+        title: Cats
+    cats:
+      admin:
+        cats:
+          actions:
+            create_new: Nieuwe Cat toevoegen
+            reorder: De volgorde van de Cats wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Cat-volgorde
+          records:
+            title: Cats
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Cats. Druk op 'Nieuwe Cat toevoegen' om de eerste toe te voegen.
+          cat:
+            view_live_html: Deze cat op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze cat
+            delete: Deze cat definitief verwijderen
+      cats:
+        show:
+          other: Andere Cats
+  activerecord:
+    attributes:
+      'refinery/cats/cat':
+        name: Name
+        description: Description
+        dob: Dob
+        gender: Gender
+        breed: Breed
+        declawed: Declawed
+        photo: Photo

@@ -1,0 +1,34 @@
+es:
+  refinery:
+    plugins:
+      cats:
+        title: Cats
+#        article: masculino/femenino
+    cats:
+      admin:
+        cats:
+          actions:
+            create_new: Crear nuevo cat
+            reorder: Reordenar cats
+            reorder_done: Reordenación de cats completada
+          records:
+            title: Cats
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay cats todavía. Pulsa en "Crear nuevo Cat" para crear tu primer cat.
+          cat:
+            view_live_html: Ver este cat como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este cat
+            delete: Borrar este cat para siempre
+      cats:
+        show:
+          other: Otros cats
+  activerecord:
+    attributes:
+      'refinery/cats/cat':
+        name: Name
+        description: Description
+        dob: Dob
+        gender: Gender
+        breed: Breed
+        declawed: Declawed
+        photo: Photo

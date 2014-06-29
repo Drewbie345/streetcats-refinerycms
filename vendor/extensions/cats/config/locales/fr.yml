@@ -1,0 +1,33 @@
+fr:
+  refinery:
+    plugins:
+      cats:
+        title: Cats
+    cats:
+      admin:
+        cats:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Cat
+            reorder: Réordonner les Cats
+            reorder_done: Fin de réordonnancement des Cats
+          records:
+            title: Cats
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Cat. Cliquer sur "Créer un(e) nouve(au/l/lle) Cat" pour créer votre premi(er/ère) cat.'
+          cat:
+            view_live_html: Voir ce(t/tte) cat <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) cat
+            delete: Supprimer définitivement ce(t/tte) cat
+      cats:
+        show:
+          other: Autres Cats
+  activerecord:
+    attributes:
+      'refinery/cats/cat':
+        name: Name
+        description: Description
+        dob: Dob
+        gender: Gender
+        breed: Breed
+        declawed: Declawed
+        photo: Photo

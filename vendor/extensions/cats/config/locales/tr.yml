@@ -1,0 +1,33 @@
+tr:
+  refinery:
+    plugins:
+      cats:
+        title: Cats
+    cats:
+      admin:
+        cats:
+          actions:
+            create_new: Yeni Ekle Cat
+            reorder: Tekrar sirala Cats
+            reorder_done: Tekrar siralama tamamlandiCats
+          records:
+            title: Cats
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Cats yok henuz.  Tikla "Yeni Ekle Cat" eklemek senin ilk cat.
+          cat:
+            view_live_html: Bunu canlu cat goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle cat
+            delete: Bunu Sil cat sonsuza dek
+      cats:
+        show:
+          other: Diger Cats
+  activerecord:
+    attributes:
+      'refinery/cats/cat':
+        name: Name
+        description: Description
+        dob: Dob
+        gender: Gender
+        breed: Breed
+        declawed: Declawed
+        photo: Photo

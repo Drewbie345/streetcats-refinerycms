@@ -1,0 +1,2 @@
+<%= will_paginate @cats if Refinery::Cats::Admin::CatsController.pageable? %>
+<%= render 'sortable_list' %>

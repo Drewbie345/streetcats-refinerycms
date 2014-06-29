@@ -1,0 +1,20 @@
+<% content_for :body do %>
+  <div class="container">
+    <div class="row borders">
+      <h1><strong>Our Gallery!</strong></h1>
+    </div>
+    <div class="row borders">
+      <div class="col-md-12">
+      <ul id="cats">
+        <% @cats.each do |cat| %>
+          <li>
+            <%= link_to image_tag(cat.photo.thumbnail('300x300').url), refinery.cats_cat_path(cat) %>
+            <div><strong><%= cat.name %></strong></div>
+          </li>
+        <% end %>
+      </ul>
+      </div>
+    </div>
+  <% end %>
+</div>
+<%= render '/refinery/content_page' %>

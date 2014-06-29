@@ -1,0 +1,33 @@
+it:
+  refinery:
+    plugins:
+      cats:
+        title: Cats
+    cats:
+      admin:
+        cats:
+          actions:
+            create_new: Aggiungi Nuovo Cat
+            reorder: Riordina Cats
+            reorder_done: Termina il Riordino di Cats
+          records:
+            title: Cats
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Cats. Clicca "Aggiungi Nuovo Cat" per aggiungere il tuo primo cat.
+          cat:
+            view_live_html: Guarda live questo cat <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo cat
+            delete: Rimuovi per sempre questo cat
+      cats:
+        show:
+          other: Altri Cats
+  activerecord:
+    attributes:
+      'refinery/cats/cat':
+        name: Name
+        description: Description
+        dob: Dob
+        gender: Gender
+        breed: Breed
+        declawed: Declawed
+        photo: Photo
