@@ -1,3 +1,23 @@
-<section id='body'>
-  <%=raw @page.content_for(:body) %>
-</section>
+<div class="container">
+  <div class="row borders">
+    <div class="col-md-12">
+      <h1><strong>About Us!</strong></h1>
+    </div> 
+  </div>
+  <div class="row borders" id="about">
+    <div class="col-md-8 lead">
+      <%=raw @page.content_for(:body) %>
+    </div>
+    <div class="col-md-4">
+      <%= image_tag 'home_cat.jpg', alt: 'front page cat' %>
+    </div>
+  </div>
+  <div class="row borders" id="adopt-info">
+    <div class="col-md-4">
+      <%= image_tag 'home_cat.jpg', alt: 'front page cat' %>
+    </div>
+    <div class="col-md-8">
+      <%=raw @page.content_for(:side_body) %>
+    </div>
+  </div>
+</div>  

@@ -53,3 +53,7 @@ a { text-decoration: none; color: black; }
 #cats li img { border-radius: 10px; }
 .each-cat { font-size: 125%; }
 .rounded {border-radius: 10px; }
+
+#footer { text-align: center; font-size: 125%; }
+#about img, #adopt-info img { border-radius: 10px; }
+#adopt-info { font-size: 125%; }
