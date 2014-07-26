@@ -57,3 +57,5 @@ a { text-decoration: none; color: black; }
 #footer { text-align: center; font-size: 125%; }
 #about img, #adopt-info img { border-radius: 10px; }
 #adopt-info { font-size: 125%; }
+#donate img, #boutique img { border-radius: 10px; }
+.larger { font-size: 150%; }

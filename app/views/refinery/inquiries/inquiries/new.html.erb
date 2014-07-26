@@ -1,5 +1,8 @@
 <div class="container">
   <div class="row borders">
+    <h1><strong>Contact Us!</strong></h1>
+  </div>
+  <div class="row borders">
     <% content_for :body do %>
       <%= raw @page.content_for(Refinery::Pages.default_parts.first.to_sym) if Refinery::Pages.default_parts.any? %>
   </div>
@@ -11,35 +14,32 @@
                      :object => @inquiry,
                      :include_object_name => true
                    } %>
-        <div class="field form-group">
-          <%= f.required_label :name, :class => 'placeholder-fallback col-sm-2 control-label' %>
-          <div class="col-sm-10">
+        <div class="form-group field">
+          <%= f.required_label :name, :class => 'placeholder-fallback' %>
           <%= f.text_field :name, :class => 'text form-control', :required => 'required',
             :placeholder => t('name', :scope => 'activerecord.attributes.refinery/inquiries/inquiry') if Refinery::Inquiries.show_placeholders %>
-          </div>
         </div>
-        <div class="field">
+        <div class="form-group field">
           <%= f.required_label :email, :class => 'placeholder-fallback' %>
-          <%= f.email_field :email, :class => 'text email', :required => 'required',
+          <%= f.email_field :email, :class => 'text email form-control', :required => 'required',
             :placeholder => t('email', :scope => 'activerecord.attributes.refinery/inquiries/inquiry') if Refinery::Inquiries.show_placeholders %>
         </div>
 
         <% if Refinery::Inquiries.show_phone_number_field %>
-          <div class="field">
+          <div class="form-group field">
             <%= f.label :phone, :class => 'placeholder-fallback' %>
-            <%= f.text_field :phone, :class => 'text phone',
+            <%= f.text_field :phone, :class => 'text phone form-control',
               :placeholder => t('phone', :scope => 'activerecord.attributes.refinery/inquiries/inquiry') if Refinery::Inquiries.show_placeholders %>
           </div>
         <% end %>
 
-        <div class='field message_field'>
+        <div class='field form-group message_field'>
           <%= f.required_label :message, :class => 'placeholder-fallback' %>
-          <%= f.text_area :message, :rows => 8, :required => 'required',
+          <%= f.text_area :message, :rows => 8, :required => 'required', :class => 'form-control',
             :placeholder => t('message', :scope => 'activerecord.attributes.refinery/inquiries/inquiry') if Refinery::Inquiries.show_placeholders %>
         </div>
         <div class="actions">
           <%= f.submit t('.send') %>
-          <%= link_to t('.privacy_policy'), "/pages/privacy-policy", :id => "privacy_link" if Refinery::Inquiries.show_contact_privacy_link %>
         </div>
       <% end %>
     </div>
