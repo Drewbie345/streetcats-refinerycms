@@ -33,6 +33,7 @@
 
 body { background-image: url('blue_bg.png'); }
 a { text-decoration: none; color: black; }
+a:hover { text-decoration: none; }
 
 .lead { font-size: 200%; }
 .borders { border: 1px solid gray; border-radius: 10px; padding: 1%; margin: 1%; background-color: white; opacity: 0.9; }
@@ -59,3 +60,5 @@ a { text-decoration: none; color: black; }
 #adopt-info { font-size: 125%; }
 #donate img, #boutique img { border-radius: 10px; }
 .larger { font-size: 150%; }
+#adopt-process ol li { font-size: 125%; }
+#adopt-fee p { font-size: 125%; }
